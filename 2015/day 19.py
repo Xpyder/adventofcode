@@ -139,7 +139,7 @@ def apply_RnAr(molecule: str,steps:int,repl_RnAr: list):
 
 # reduce all the inner parts of each Rn..Ar pair
 # to something that matches one of the direct replacement rules
-def replace_inners(starting_molecule: str, steps:int, repl_doubles: list, repl_RnAr: list) -> list[tuple[str,int]]:
+def replace_inners(starting_molecule: str, steps:int, repl_doubles: list, repl_RnAr: list) -> str,int:
     molecule = starting_molecule
     inners = []
     
